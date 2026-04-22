@@ -1,0 +1,38 @@
+.puzzle-area,
+.pieces-bank {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.drop-zone {
+    width: 100px;
+    height: 200px;
+    border: 1px dashed #aaa;
+}
+
+.piece {
+    width: 100px;
+    height: 200px;
+    cursor: grab;
+    z-index: 10;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Arc-En-Ciel</title>
+
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <button id="shuffle">Mélanger</button>
+    
+    <div class="puzzle-area">
+        <div class="drop-zone" data-correct="1"></div>
+        <div class="drop-zone" data-correct="2"></div>
+        <div class="drop-zone" data-correct="3"></div>
+        <div class="drop-zone" data-correct="4"></div>
+        <div class="drop-zone" data-correct="5"></div>
+        <div class="drop-zone" data-correct="6"></div>
+    </div>
+
+    <div id="bank" class="pieces-bank">
+        <img src="rainbow/arc1.png" class="piece" data-id="1">
+        <img src="rainbow/arc2.png" class="piece" data-id="2">
+        <img src="rainbow/arc3.png" class="piece" data-id="3">
+        <img src="rainbow/arc4.png" class="piece" data-id="4">
+        <img src="rainbow/arc5.png" class="piece" data-id="5">
+        <img src="rainbow/arc6.png" class="piece" data-id="6">
+    </div>
+
+    <div id="result"></div>
+
+ 
+</body>
+</html>

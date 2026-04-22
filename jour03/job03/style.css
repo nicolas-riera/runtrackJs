@@ -1,0 +1,44 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background: #ccc;
+    padding: 5px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.empty {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+}
+
+#message {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    height: 30px;
+}
+
+.win {
+    color: green;
+}
+
+#restart {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+}
