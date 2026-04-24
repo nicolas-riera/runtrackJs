@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Sécurisée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <nav>
+            <a href="connexion.html">Se connecter</a>
+            <a href="inscription.html" class="active">S'inscrire</a>
+        </nav>
+
+        <h2>Créer un compte</h2>
+        
+        <form id="registrationForm">
+            <div id="content-area">
+                <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <div style="width: 50%;">
+                        <input type="text" id="nom" placeholder="Nom" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <span id="error-nom" class="error-message">Nom invalide</span>
+                    </div>
+                    <div style="width: 50%;">
+                        <input type="text" id="prenom" placeholder="Prénom" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <span id="error-prenom" class="error-message">Prénom invalide</span>
+                    </div>
+                </div>
+                
+                <input type="email" id="email" placeholder="Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                <span id="error-email" class="error-message">Email déjà utilisé ou invalide</span>
+
+                <input type="password" id="password" placeholder="Mot de passe (8+ car.)" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                <span id="error-password" class="error-message">Trop court (min. 8 caractères)</span>
+                
+                <input type="text" id="adresse" placeholder="Adresse" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                <span id="error-adresse" class="error-message">Adresse requise</span>
+                
+                <input type="text" id="cp" placeholder="Code postal" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                <span id="error-cp" class="error-message">Doit contenir 5 chiffres</span>
+            </div>
+            
+            <button type="submit" style="background: #28a745; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; width: 100%;">
+                Finaliser l'inscription
+            </button>
+        </form>
+    </div>
+
+    <script src="inscription_script.js"></script>
+</body>
+</html>
